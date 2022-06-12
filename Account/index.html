@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Account</title>
+	<link rel="stylesheet" type="text/css" href="css\stylessheet.css">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".Account").click(function(){
+					$(".AccountForm").fadeIn(1000);
+					$(".LoginForm").hide();
+				});
+			$(".Login").click(function(){
+				$(".LoginForm").fadeIn(1000);
+				$(".AccountForm").hide();
+			});
+			$(".acc").click(function(){
+				$(".AccountForm").fadeOut(1000);
+				
+
+			});
+			$(".log").click(function(){
+				$(".LoginForm").fadeOut(1000);
+				
+
+			});
+
+
+
+		});
+	</script>
+</head>
+<body>
+	<div class="MainDiv">
+		<div class="Header">
+			<a href="#" class="Account">Create an account</a>
+			<a href="#" class="Login">Login</a>
+
+		</div>
+		<div class="BannerImg">
+			<div class="AccountForm">
+				<img src="img/images.jpg" class="acc">
+				<form>
+					<ul>
+						<li>
+							<label for="name"><b>Name</b></label>
+						</li>
+						<li>	
+					 		<input type="text" name="name" id="name" value="Name">
+						</li>
+						<li>
+							<label for="email"><b>E-mail id:</b></label>	
+			 			</li>
+			 			<li>	
+			 				<input type="text" name="eid" id="eid" value="E-mail">
+						</li>
+						<li>
+							<label for="CNIC"><b>Password</b></label>	
+						</li>
+						<li>	
+							<input type="Password" name="Password" id="cnic" value="Password">
+						</li>
+						<li>
+							<label for="Confirm Password"><b>Confirm Password</b></label>	
+			 			</li>
+			 			<li>
+			 				<input type="Password" name="c-password" id="c-password" value="Confirm Password">
+						</li>
+					</ul>
+				</form>	
+			</div>	 
+			<div class="LoginForm">
+				<img src="img/images.jpg" class="log">	
+				<form>
+					<ul>
+						<li>
+							<label for="uname"><b>User Name</b></label>
+						</li>
+						<li>
+					 		<input type="text" name="name" id="name" value="User Name">
+						</li>
+						
+						<li>
+							<label for="Password"><b>Password:</b></label>
+						</li>
+						<li>	
+							<input type="Password" name="Password" id="Password" value="Password">
+						</li>		
+				</form>		 			 
+			</div>			
+		</div>	
+	</div>
+</body>
+</html>
